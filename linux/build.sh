@@ -47,8 +47,8 @@ ULTRASCHALL_ROOT_DIRECTORY=$(pwd)
 ULTRASCHALL_BUILD_DIRECTORY="$ULTRASCHALL_ROOT_DIRECTORY/build"
 ULTRASCHALL_BUILD_LOG="$ULTRASCHALL_ROOT_DIRECTORY/build.log"
 
-ULTRASCHALL_PLUGIN_URL="https://github.com/Ultraschall/ultraschall-plugin.git"
-ULTRASCHALL_PLUGIN_BRANCH="main"
+ULTRASCHALL_PLUGIN_URL="https://github.com/fuzzblob/ultraschall-plugin"
+ULTRASCHALL_PLUGIN_BRANCH="libtag-update"
 
 ULTRASCHALL_SOUNDBOARD_URL="https://github.com/Ultraschall/ultraschall-soundboard.git"
 ULTRASCHALL_SOUNDBOARD_BRANCH="main"
