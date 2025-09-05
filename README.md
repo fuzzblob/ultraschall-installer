@@ -1,9 +1,14 @@
 ## Windows
 
-Building on Windows requires Visual Studio 2019 or later.
+Dependencies:
+
+- Building on Windows requires Visual Studio 2019 or later.
+- Pandoc [https://pandoc.org/installing.html](https://pandoc.org/installing.html)
+
+To build the Windows installer run the following in PowerShell:
 
 ```powershell
-PS> cd win32/
+PS> cd ultraschall-installer/windows/
 PS> ./build.ps1
 ```
 
