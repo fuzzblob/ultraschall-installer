@@ -222,7 +222,7 @@ $env:ULTRASCHALL_THEME_SOURCE = ".\build\ultraschall-theme"
 
 if ($BuildFailed -eq $False) {
   Write-Host "Compiling Theme Files..."
-  & $HeatProgramPath dir $env:ULTRASCHALL_THEME_SOURCE -nologo -cg UltraschallThemeFiles -ag -scom -sreg -sfrag -srd -dr ReaperFolder -var env.ULTRASCHALL_THEME_SOURCE -out ./build/ultraschall-theme.wxs
+  & $HeatProgramPath dir $env:ULTRASCHALL_THEME_SOURCE -nologo -cg UltraschallThemeFiles -ag -scom -sreg -sfrag -srd -dr REAPERFOLDER -var env.ULTRASCHALL_THEME_SOURCE -out ./build/ultraschall-theme.wxs
   if ($LASTEXITCODE -eq 0) {
     & $CandleProgramPath -nologo -arch x64 -out ./build/ultraschall-theme.wixobj ./build/ultraschall-theme.wxs
     if ($LASTEXITCODE -ne 0) {
