@@ -25,24 +25,26 @@ $ ./build.sh
 
 **in development - currently testing only**
 
-1. clone this repository
-
-2. change directory
+- clone this repository
+- change directory
+- run the build script
 
 ```bash
 $ cd ultraschall-installer/linux
-```
-
-3. build
-
-```bash
 $ ./build.sh
 ```
 
 To install Ultraschall, get the installer artifact in `linux/build/artifacts` (tar.gz file):
 
 ```bash
-$ tar xvf ULTRASCHALL_R5.1.2-preview.tar.gz
+$ cd build/artifacts
+$ tar -xvzf ULTRASCHALL_R5.1.2-preview.tar.gz
 $ cd R5.1.2-preview
 $ ./install.sh
+```
+
+Optionally pass a path to a portable REAPER install if you want to keep you current Ultraschall or REAPER install intact when testing a new version.
+
+```bash
+$ ./install.sh ~/Downloads/reaper_linux_x86_64/REAPER/
 ```
